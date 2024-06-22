@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me odias? 😿</title>
+    <style>
+        body { 
+            background-color: blanchedalmond;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .body_title { 
+            color: slateblue;
+            margin-top: 10px; /* Ajusta este valor según sea necesario */
+        }
+
+        .body__img { 
+            width: 30%;
+            margin: 20px 0;
+        }
+
+        button {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="body_title">Me odias? 😿</h1>
+    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXlseGVrczU0cGVsdmV3ZDEybTlvNXhobnp3YnUzeDF6c3EybGkzOSZlcD12MV9pbnRlcm5naWZfYnlfaWQmY3Q9Zw/IccxLhyz1IjswrjLOl/giphy.webp"
+    alt="Soy ese" class="body__img">
+    <button onclick="sibecerro()">Si becerro idiota 😜</button>
+    <button id="noButton" onclick="moveButton()">No, te amo amor mio 💞</button>
+
+    <script>
+        const sibecerro = () => {
+            alert('Lo sabia 😿');
+            alert('Fokiu pipipi');
+            alert('Pq me odias tanto?');
+            alert('Mentiras calvita 😜😜😜');
+            alert('Preparate 😈😈😈');
+            alert('Lista?');
+            alert('Es la hora es la hora 😈');
+            alert('Ya, mucha recochita');
+            alert('Te adoro con mi vida 💞');
+            alert('Ahora si, nos fuimos 🙀');
+            location.href = 'https://teamosam.my.canva.site/';
+        };
+
+        const moveButton = () => {
+            const button = document.getElementById('noButton');
+            const x = Math.random() * (window.innerWidth - button.clientWidth);
+            const y = Math.random() * (window.innerHeight - button.clientHeight);
+            button.style.position = 'absolute';
+            button.style.left = `${x}px`;
+            button.style.top = `${y}px`;
+        };
+    </script>
+</body>
+</html>
